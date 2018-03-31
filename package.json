@@ -1,0 +1,40 @@
+{
+  "name": "deployer-api",
+  "version": "1.0.0",
+  "description": "Node, Express deploy API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w src --exec \"babel-node src\"",
+    "build": "npm run clean && babel src -D -d dist",
+    "clean": "rimraf dist",
+    "test": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MindeVieras/deployer-api.git"
+  },
+  "author": "Minde Vieras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MindeVieras/deployer-api/issues"
+  },
+  "homepage": "https://github.com/MindeVieras/deployer-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "nodemon": "^1.17.2",
+    "rimraf": "^2.6.2"
+  }
+}
