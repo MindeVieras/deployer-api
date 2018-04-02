@@ -23,11 +23,11 @@ app.use(cors())
 
 // Body parser
 app.use(bodyParser.urlencoded({
-    extended: true,
-    limit: '50mb'
+  extended: true,
+  limit: '50mb'
 }))
 app.use(bodyParser.json({
-    limit : '50mb'
+  limit : '50mb'
 }))
 
 export default app
